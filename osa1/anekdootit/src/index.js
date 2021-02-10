@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-const Header = (props) => (
-  <h1>{props.title}</h1>
+const Header = ({ title }) => (
+  <h1>{title}</h1>
 )
 
-const Button = (props) => (
-  <button onClick={props.onClick}>{props.name}</button>
+const Button = ({ onClick, name }) => (
+  <button onClick={onClick}>{name}</button>
 )
 
 const App = (props) => {
